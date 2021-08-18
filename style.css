@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 
 .light-bg{
-    background-image: url("assets/images/9a08bd95d830a13924f4a64ef20a65f1.jpg");
+    background-image: url("assets/images/home_bg.jpg");
     background-size: cover;
     background-position: center center;
 }
