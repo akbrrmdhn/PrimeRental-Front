@@ -9,56 +9,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 20px; padding-bottom: 20px;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">PrimeRental</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: flex; justify-content: end; margin-right: 15px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vehicle Type</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-        <a class="btn btn-outline-warning" href="login.html" role="button" style="margin-right: 15px; color: black;">Login</a>
-        <a class="btn btn-warning" href="#" role="button">Register</a>
-      </div>
-    </div>
-  </nav>
   <section class="light-bg" id="hero">
     
         <div class="container" style="display: grid; padding-top: 100px;">
-          <div class="col-md-6">
-            <div class="explore">
-              <p style="font-weight: 700; font-size: 64px; color: white;">Let's Explore<br>the World</p>
-            </div>
-            <div>
-              <p style="color: white;">Don't have an account?</p>
-            </div>
-            <button type="button" class="btn btn-secondary" style="width: 400px; height: 60px;">Sign Up</button>
-          </div>
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="explore">
+                <p style="font-weight: 700; font-size: 64px; color: white;">Let's Explore<br>the World</p>
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+              <div>
+                <p style="color: white;">Don't have an account?</p>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+              <button type="button" class="btn btn-secondary" style="width: 400px; height: 60px;">Sign Up</button>
+            </div>
+            <div class="col-md-6" style="padding-left: 100px; padding-top: 50px;">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 400px; height: 60px;">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" style="width: 400px; height: 60px;">
+                </div>
+                <p style="color: white; text-decoration: underline;">Forgot Password?</p>
+                <button type="submit" class="btn btn-warning" style="width: 400px; height: 60px;">Login</button>
+                <button type="submit" class="btn btn-light" style="width: 400px; height: 60px; margin-top: 10px;">Login with Google</button>
+              </form>
+            </div>
           </div>
         </div>
     
@@ -69,7 +47,7 @@
       <div class="column" style="align-content: center;">
         <div class="row">
           <div class="footer-col" style="padding-right: 100px;">
-            <h4>Company Icon</h4>
+            <h4><a href="index.html">Company Icon</a></h4>
             <p>Plan and book your perfect trip with 
               expert advice, travel tips for vehicle
               information from us.</p><br><br>
