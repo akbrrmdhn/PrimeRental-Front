@@ -10,65 +10,172 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 60px; padding-bottom: 30px;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">PrimeRental</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: flex; justify-content: end; margin-right: 15px;">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="#">Vehicle Type</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <a class="btn btn-outline-warning" href="login.html" role="button" style="margin-right: 15px; color: black; padding-left: 30px; padding-right: 30px;">Login</a>
+            <a class="btn btn-warning" href="#" role="button" style="padding-left: 30px; padding-right: 30px;">Register</a>
           </div>
         </div>
       </nav>
     <section class="light-bg" id="hero">
         <div class="container">
-            <div>
-                <h1>Explore and Travel</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum impedit accusantium voluptas odio architecto et eius doloremque deserunt eaque ipsa, amet fugiat incidunt porro nobis! Veniam reprehenderit perspiciatis natus aliquam!</p>
+            <div class="explore">
+                <p style="font-weight: 700; font-size: 64px; color: white;">Explore and<br> Travel</p>
+            </div>
+            <h3 style="color: white; padding-top: 100px; padding-bottom: 100px;">Vehicle Finder</h3>
+            <div class="container" style="display: grid; height: auto;">
+              <div class="row me-auto" style="margin-bottom: 30px;">
+                <div class="col-md">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Location
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item" type="button">Bali</button></li>
+                      <li><button class="dropdown-item" type="button">Yogyakarta</button></li>
+                      <li><button class="dropdown-item" type="button">Jakarta</button></li>
+                      <li><button class="dropdown-item" type="button">Kalimantan</button></li>
+                      <li><button class="dropdown-item" type="button">Malang</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Type
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item" type="button">Bikes</button></li>
+                      <li><button class="dropdown-item" type="button">Cars</button></li>
+                      <li><button class="dropdown-item" type="button">Motorbikes</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row me-auto">
+                <div class="col-md">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Payment
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item" type="button">Waiting for payment</button></li>
+                      <li><button class="dropdown-item" type="button">Payment succeed</button></li>
+                      <li><button class="dropdown-item" type="button">Payment declined</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Date
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item" type="button">Today</button></li>
+                      <li><button class="dropdown-item" type="button">Tomorrow</button></li>
+                      <li><button class="dropdown-item" type="button">The day after Tomorrow</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row me-auto">
+                <div class="col-md" style="padding-top: 50px;">
+                  <button type="button" class="btn btn-warning" style="width: 200px;">Explore</button>
+                </div>
+              </div>
             </div>
         </div>
     </section>
-
-    <div class="grid-container">
+    <div class="container">
+        <div class="row" style="justify-content: space-evenly; display: flex; padding-top: 50px;">
+            <div class="column col-md">
+                <h2>Popular in Town</h2>
+            </div>
+            <div class="column col-md" style="justify-content: right; text-align: end;">
+                <a href="#">View all ></a>
+            </div>
+        </div>
         
+        <div class="row row-cols-1 row-cols-md-4 g-4" style="padding-top: 50px; justify-content: space-between;">
+                <div class="col-sm">
+                  <div class="card h-100 rounded">
+                    <img src="assets/images/merapi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Merapi</h5>
+                      <p class="card-text">Yogyakarta</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card h-100 rounded">
+                    <img src="assets/images/teluk-bogam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Teluk Bogam</h5>
+                      <p class="card-text">Kalimantan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card h-100 rounded">
+                    <img src="assets/images/bromo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bromo</h5>
+                      <p class="card-text">Malang</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card h-100 rounded">
+                    <img src="assets/images/malioboro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Malioboro</h5>
+                      <p class="card-text">Yogyakarta</p>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        
+        <div class="row">
+            <h2>Testimonials</h2>
+            <div class="col-md">
+
+            </div>
+            <div class="col-md">
+
+            </div>
+        </div>
     </div>
+    
 
     <footer class="footer">
       <div class="container-footer">
-        <div class="column">
+        <div class="column" style="align-content: center;">
           <div class="row">
             <div class="footer-col" style="padding-right: 100px;">
               <h4>Company Icon</h4>
               <p>Plan and book your perfect trip with 
                 expert advice, travel tips for vehicle
                 information from us.</p><br><br>
-              <p style="font-size: 17px;">©2020 Vehicle Rental Center. All rights reserved</p>
+              <p style="font-size: 17px;">©2021 Prime Rental. All rights reserved</p>
             </div>
             <div class="footer-col">
               <h4>Destinations</h4>
@@ -116,5 +223,25 @@
       </div>
   </footer>
   </body>
-
+  <style>
+      .dropdown-toggle{
+        width: 200px;
+        text-align: start;
+      }
+      .card{
+          width: 18rem;
+          height: 20%;
+      }
+      .card-img-top{
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+      }
+      .card-body{
+          position: relative;
+          padding-right: 50px;
+      }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </html>
